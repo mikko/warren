@@ -1,0 +1,16 @@
+.graphParent {
+	width: 1200px;
+	height: 700px;
+}
+
+svg {
+	background-color: lightblue;
+}
+
+.warren__node {
+	fill: lightgoldenrodyellow;
+}
+
+.warren__line {
+	stroke: black;
+}
