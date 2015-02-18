@@ -13,6 +13,7 @@
         a series of underground tunnels where rabbits live
     </div>
     <div id="graph" class="graphParent"></div>
+    <pre id="data"></pre>
     <script type="text/javascript">
         var data = [
             ["Daughter", "Father"],
@@ -28,6 +29,7 @@
             data: data
         };
         var g = new WarrenGraph(graphOptions);
+        document.getElementById('data').innerText = "Data used:\n" + JSON.stringify(data, null, 2);
     </script>
 </body>
 </html>
