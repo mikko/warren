@@ -2,34 +2,23 @@
 <html>
 <head>
     <title>Example page for warren graph</title>
+    <script data-main="main.js" type="text/javascript" src="bower_components/requirejs/require.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.min.js"></script>
-    <script type="text/javascript" src="lib/warren.js"></script>
 </head>
 <body>
+    <svg width="0" height="0">
+    	<defs>
+	    <linearGradient id="exampleGradient" x1="0%" y1="0%" x2="50%" y2="50%">
+	      <stop offset="0%" style="stop-color:#8e9eab;stop-opacity:1" />
+	      <stop offset="100%" style="stop-color:#eef2f3;stop-opacity:1" />
+	    </linearGradient>
+	  </defs>
+    </svg>
     <div>
         <strong>Warren</strong>
         a series of underground tunnels where rabbits live
     </div>
     <div id="graph" class="graphParent"></div>
     <pre id="data"></pre>
-    <script type="text/javascript">
-        var data = [
-            ["Daughter", "Father"],
-            ["Son", "Father"],
-            ["Father", "Grandfather"],
-            ["Grandfather", "Tarzan"],
-            ["Sister","Grandfather"],
-            ["Nephew", "Sister"],
-            ["Grandson", "Son"]
-        ]
-        var graphOptions = {
-            parentEl: document.getElementById("graph"),
-            data: data
-        };
-        var g = new WarrenGraph(graphOptions);
-        document.getElementById('data').innerText = "Data used:\n" + JSON.stringify(data, null, 2);
-    </script>
 </body>
 </html>
