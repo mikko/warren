@@ -1,0 +1,23 @@
+{
+  "name": "warren",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mjpohja/warren",
+  "authors": [
+    "Mikko Pohja <mjpohja@gmail.com>"
+  ],
+  "description": "Hierarchical graphs with D3.js",
+  "main": "lib/warren.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.3.0",
+    "d3": "~3.5.5",
+    "requirejs": "~2.1.16"
+  }
+}

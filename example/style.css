@@ -1,14 +1,16 @@
+body {
+	background-color: #242424;
+	color: #ADADAD;
+}
+
 .graphParent {
 	width: 1200px;
 	height: 700px;
 }
 
-svg {
-	background-color: #FFFFFF;
-}
-
 .warren__node {
-	fill: rgb(208, 208, 208);;
+	fill: url(#exampleGradient);
+	/* rgb(208, 208, 208); */
 }
 
 .warren__line {
