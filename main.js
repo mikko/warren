@@ -1,5 +1,5 @@
 require([
-    "../lib/warren"
+    "lib/warren"
 ],function(
 	WarrenGraph
 ){
